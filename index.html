@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Peppa Meteo</title>
+</head>
+
+<body class="bg-no-repeat bg-cover bg-fixed">
+
+    <header>
+
+
+    </header>
+
+
+    <main>
+
+        <div class="flex flex-row justify-between py-40 px-20">
+
+            <div> <button class="font-bold text-5xl pt-40" onclick="prev()"> <  </button> </div>
+
+            <div class="px-10" id="day_0">
+
+                <h2 class="font-bold">Le temps qu'il fait aujourd'hui: </h2>
+                <p class="font-semibold" id="temp"> </p>
+                <p class="font-semibold" id="feels"> </p>
+                <img id="peppa_pig" src="">
+
+
+            </div>
+            <div class="px-10" id="day_1">
+
+                <h2 class="font-bold"> Le temps qu'il fera demain: </h2>
+                <p class="font-semibold" id="temp"> </p>
+                <p class="font-semibold" id="feels"> </p>
+                <img id="peppa_pig" src="">
+
+            </div>
+            <div class="px-10" id="day_2">
+
+                <h2 class="font-bold"> Le temps qu'il fera après demain: </h2>
+                <p class="font-semibold" id="temp"> </p>
+                <p class="font-semibold" id="feels"> </p>
+                <img id="peppa_pig" src="">
+
+            </div>
+            <div> <button class="font-bold text-5xl pt-40" onclick="next()"> >  </button> </div>
+        </div>
+
+        <div class="flex justify-center ">
+
+
+
+            <label for="city-select">Choisis une ville:</label>
+
+            <select class="bg-transparent" name="cities" id="city-select">
+                <option value="cf">Clermont-ferrand </option>
+                <option value="pa">Paris</option>
+                <option value="to">Tokyo</option>
+                <option value="mo">Moscow</option>
+                <option value="sy">Sydney</option>
+                <option value="ny">New York</option>
+                <option value="va">Vancouver</option>
+            </select>
+
+        </div>
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>
